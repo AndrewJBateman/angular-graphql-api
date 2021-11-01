@@ -3,7 +3,7 @@ const { gql } = require("apollo-server");
 exports.typeDefs = gql`
 	type Query {
 		example: String
-		parts: [Part!]!
+		parts(filter: PartsFilterInput): [Part!]!
 		part(id: ID!): Part
 		categories: [Category!]!
 		category(id: ID): Category
@@ -18,6 +18,7 @@ exports.typeDefs = gql`
 		weight: Float!
 		criticalPart: Boolean
 		category: Category
+    fieldReviews: [fieldReview!]!
 	}
 
 	type Category {
@@ -25,4 +26,16 @@ exports.typeDefs = gql`
 		name: String!
 		parts: [Part!]!
 	}
+
+  type fieldReview {
+    id: ID!
+    date: String!
+    title: String!
+    comment: String!
+    rating: Int!
+  }
+
+  input PartsFilterInput {
+    criticalPart: Boolean
+  }
 `;
