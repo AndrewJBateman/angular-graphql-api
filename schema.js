@@ -9,25 +9,37 @@ exports.typeDefs = gql`
 		category(id: ID): Category
 	}
 
+  type Mutation {
+    addCategory(input: AddCategoryInput!): Category!
+    addPart(input: AddPartInput!): Part!
+    addFieldReview(input: AddFieldReviewInput!): FieldReview!
+    deleteCategory(id: ID!): Boolean!
+    deletePart(id: ID!): Boolean!
+    deleteFieldReview(id: ID!): Boolean!
+    updateCategory(id: ID!, input: UpdateCategoryInput!): Category
+    updatePart(id: ID!, input: UpdatePartInput!): Part
+    updateFieldReview(id: ID!, input: UpdateFieldReviewInput!): FieldReview
+  }
+
 	type Part {
 		id: ID!
 		name: String!
 		description: String!
+    quantity: Int!
 		image: String!
-		quantity: Int!
 		weight: Float!
-		criticalPart: Boolean
-		category: Category
-    fieldReviews: [fieldReview!]!
+		criticalPart: Boolean!
+		category: Category!
+    fieldReviews: [FieldReview!]!
 	}
 
 	type Category {
 		id: ID!
 		name: String!
-		parts: [Part!]!
+		parts(filter: PartsFilterInput): [Part!]!
 	}
 
-  type fieldReview {
+  type FieldReview {
     id: ID!
     date: String!
     title: String!
@@ -37,5 +49,50 @@ exports.typeDefs = gql`
 
   input PartsFilterInput {
     criticalPart: Boolean
+    avgRating: Int
+  }
+
+  input AddCategoryInput {
+    name: String!
+  }
+
+  input UpdateCategoryInput {
+    name: String!
+  }
+
+  input AddPartInput {
+		name: String!
+		description: String!
+    quantity: Int!
+		image: String!
+		weight: Float!
+		criticalPart: Boolean!
+		categoryId: String
+  }
+
+  input UpdatePartInput {
+		name: String!
+		description: String!
+    quantity: Int!
+		image: String!
+		weight: Float!
+		criticalPart: Boolean!
+		categoryId: String
+  }
+
+  input AddFieldReviewInput {
+    date: String!
+    title: String!
+    comment: String!
+    rating: Int!
+    partId: ID!
+  }
+
+  input UpdateFieldReviewInput {
+    date: String!
+    title: String!
+    comment: String!
+    rating: Int!
+    partId: ID!
   }
 `;
