@@ -1,5 +1,4 @@
 exports.Query = {
-	example: (parent, args, context) => "Example",
 	parts: (parent, { filter }, { db }) => {
 		let filteredParts = db.parts;
 		if (filter) {
