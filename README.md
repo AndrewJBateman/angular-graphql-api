@@ -1,6 +1,6 @@
-# :zap: Node GraphQL Apollo
+# :zap: Angular GraphQL API
 
-* Node.js + [GraphQL(https://graphql.org/) used with [Apollo Server](https://www.apollographql.com/docs/apollo-server/getting-started/)
+* Node.js + [GraphQL](https://graphql.org/) used with [Apollo Server](https://www.apollographql.com/docs/apollo-server/getting-started/) and GraphQL schema to execute queries on a data set.
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/node-graphql-apollo?style=plastic)
@@ -23,7 +23,7 @@
 
 * GraphQL used to query a mock Engineering parts `db.js` database with field reviews of parts and comments to improve the parts supply process
 * An idea of mine to link humdrum parts depots/maintenance to social media-like commenting from field personnel
-* Based on my time on engineering sites, where maintenance, spare parts, tools and related warehousing and manhours is big budget. Project costing was based on the weight of the modifications so this was vital field data, e.g weight of cables and cable-trays/cable-ladders.
+* Based on my time on engineering sites, where maintenance, spare parts, tools and related warehousing and manhours is big budget. Project costing was based on the weight of the modifications so this was vital data, e.g weight of cables and cable-trays/cable-ladders.
 * Engineering parts are classified as critical parts or not with a Boolean `criticalPart` field.
 * Users can query, add, mutate (update) and delete parts, categories & field reviews
 
@@ -78,7 +78,7 @@
 
 ## :clap: Inspiration
 
-* f
+* [Apollo Docs: Get started with Apollo Server](https://www.apollographql.com/docs/apollo-server/getting-started/)
 
 ## :file_folder: License
 
