@@ -19,6 +19,7 @@ const server = new ApolloServer({
 	},
 });
 
+// server will start on 'http://localhost:4000/'
 server.listen().then(({ url }) => {
 	console.log("Server is ready at " + url);
 });
