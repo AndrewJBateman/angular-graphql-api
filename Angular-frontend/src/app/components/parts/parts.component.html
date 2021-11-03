@@ -1,0 +1,12 @@
+<p>parts works!</p>
+<div *ngIf="loading">
+  Loading...
+</div>
+<div *ngIf="error">
+  Error :-(
+</div>
+<div *ngIf="parts">
+  <div *ngFor="let part of parts">
+    <p>{{part.name}}</p>
+  </div>
+</div>
