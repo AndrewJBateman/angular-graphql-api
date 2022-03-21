@@ -81,8 +81,8 @@
 
 ## :clipboard: Status, Testing & To-Do List
 
-* Status: Front and Backends working
-* To-Do: Add frontend styling, Tailwind?
+* Status: Basic Front and Backends working
+* To-Do: Add CMS API or POSTgreSQL database. Add frontend queries etc styling, Tailwind cards or table for data
 
 ## :clap: Inspiration
 
