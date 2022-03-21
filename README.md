@@ -36,7 +36,7 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v12](https://angular.io/) javascript framework
+* [Angular v13](https://angular.io/) javascript framework
 * [Apollo Client v3](https://www.npmjs.com/package/@apollo/client) to fetch data via GraphQL
 
 * [Node.js v14](https://nodejs.org/) Javascript runtime using the [Chrome V8 engine](https://v8.dev/)
