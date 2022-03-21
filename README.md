@@ -1,7 +1,7 @@
 # :zap: Angular GraphQL API
 
 * Frontend: Angular used with GraphQL and Apollo Client to view the backend Engineering Parts data set
-* Backend: Node.js + GraphQLused with Apollo Server and GraphQL schema to execute queries on a data set
+* Backend: Node.js + GraphQL used with Apollo Server and GraphQL schema to execute queries on a data set
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-graphql-api?style=plastic)
@@ -62,17 +62,17 @@
 * Backend: list of GraphQL mutations
 
 ```javascript
-	type Mutation {
-		addCategory(input: AddCategoryInput!): Category!
-		addPart(input: AddPartInput!): Part!
-		addFieldReview(input: AddFieldReviewInput!): FieldReview!
-		deleteCategory(id: ID!): Boolean!
-		deletePart(id: ID!): Boolean!
-		deleteFieldReview(id: ID!): Boolean!
-		updateCategory(id: ID!, input: UpdateCategoryInput!): Category
-		updatePart(id: ID!, input: UpdatePartInput!): Part
-		updateFieldReview(id: ID!, input: UpdateFieldReviewInput!): FieldReview
-	}
+ type Mutation {
+  addCategory(input: AddCategoryInput!): Category!
+  addPart(input: AddPartInput!): Part!
+  addFieldReview(input: AddFieldReviewInput!): FieldReview!
+  deleteCategory(id: ID!): Boolean!
+  deletePart(id: ID!): Boolean!
+  deleteFieldReview(id: ID!): Boolean!
+  updateCategory(id: ID!, input: UpdateCategoryInput!): Category
+  updatePart(id: ID!, input: UpdatePartInput!): Part
+  updateFieldReview(id: ID!, input: UpdateFieldReviewInput!): FieldReview
+ }
 ```
 
 ## :cool: Features
