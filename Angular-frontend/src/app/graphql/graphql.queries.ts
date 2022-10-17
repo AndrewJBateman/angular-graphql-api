@@ -5,6 +5,11 @@ const PARTS_LIST = gql`
     parts {
       id
       name
+      description
+      quantity
+      weight
+      image
+      criticalPart
     }
   }
 `;

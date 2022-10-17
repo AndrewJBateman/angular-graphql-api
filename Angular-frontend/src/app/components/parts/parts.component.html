@@ -1,12 +1,66 @@
-<p>parts works!</p>
-<div *ngIf="loading">
-  Loading...
-</div>
-<div *ngIf="error">
-  Error :-(
-</div>
+<div *ngIf="loading">Loading...</div>
+<div *ngIf="error">Error :-(</div>
 <div *ngIf="parts">
-  <div *ngFor="let part of parts">
-    <p>{{part.id}} {{part.name}}</p>
+  <div class="flex flex-col">
+    <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+      <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+        <div class="overflow-hidden">
+          <table class="min-w-full text-left">
+            <thead class="border-b bg-slate-100 border border-slate-300">
+              <tr>
+                <th
+                  scope="col"
+                  class="text-sm font-medium border border-slate-300 text-gray-900 px-6 py-2"
+                >
+                  Name
+                </th>
+                <th
+                  scope="col"
+                  class="text-sm font-medium border border-slate-300 text-gray-900 px-6 py-2"
+                >
+                  Quantity
+                </th>
+                <th
+                  scope="col"
+                  class="text-sm font-medium border border-slate-300 text-gray-900 px-6 py-2"
+                >
+                  Weight
+                </th>
+                <th
+                  scope="col"
+                  class="text-sm font-medium border border-slate-300 text-gray-900 px-6 py-2"
+                >
+                  C.Part
+                </th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let part of parts; trackBy: partTrackbyFn">
+              <tr class="bg-white border-b" (click)="onGoToPartDetail(part)">
+                <td
+                  class="px-6 py-2 whitespace-nowrap border border-slate-300 text-sm font-medium text-gray-900"
+                >
+                  {{ part.name }}
+                </td>
+                <td
+                  class="text-sm text-gray-900 font-light border border-slate-300 px-6 py-2 whitespace-nowrap"
+                >
+                  {{ part.quantity }}
+                </td>
+                <td
+                  class="text-sm text-gray-900 font-light border border-slate-300 px-6 py-2 whitespace-nowrap"
+                >
+                  {{ part.weight }}
+                </td>
+                <td
+                  class="text-sm text-gray-900 font-light border border-slate-300 px-6 py-2 whitespace-nowrap"
+                >
+                  {{ part.criticalPart }}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
