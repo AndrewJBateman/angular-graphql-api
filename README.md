@@ -36,18 +36,18 @@
 
 ## :camera: Screenshots
 
-![Image](./imgs/query.png)
+![Image](./imgs/list.png)
 ![Image](./imgs/mutate-addCategory.png)
 
 ## :signal_strength: Technologies
 
-* [Angular v13](https://angular.io/) javascript framework
+* [Angular v14](https://angular.io/) javascript framework
 * [Apollo Client v3](https://www.npmjs.com/package/@apollo/client) to fetch data via GraphQL
 
 * [Node.js v14](https://nodejs.org/) Javascript runtime using the [Chrome V8 engine](https://v8.dev/)
 * [GraphQL v15](https://graphql.org/) API query language
 * [Apollo Server v3](https://www.apollographql.com/docs/apollo-server/getting-started/) for unified data communications
-* [uuid v8](https://www.npmjs.com/package/uuid) to create RFC4122 UUIDs
+* [uuid v9](https://www.npmjs.com/package/uuid) to create RFC4122 UUIDs
 
 ## :floppy_disk: Setup
 
