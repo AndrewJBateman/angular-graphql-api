@@ -12,25 +12,25 @@
 ## :page_facing_up: Table of contents
 
 * [:zap: Angular GraphQL API](#zap-angular-graphql-api)
-  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:page\_facing\_up: Table of contents](#page_facing_up-table-of-contents)
   * [:books: General info](#books-general-info)
   * [:camera: Screenshots](#camera-screenshots)
-  * [:signal_strength: Technologies](#signal_strength-technologies)
-  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:signal\_strength: Technologies](#signal_strength-technologies)
+  * [:floppy\_disk: Setup](#floppy_disk-setup)
   * [:wrench: Testing](#wrench-testing)
   * [:computer: Code Examples](#computer-code-examples)
   * [:cool: Features](#cool-features)
-  * [:clipboard: Status, Testing & To-Do List](#clipboard-status-testing--to-do-list)
+  * [:clipboard: Status, Testing \& To-Do List](#clipboard-status-testing--to-do-list)
   * [:clap: Inspiration](#clap-inspiration)
-  * [:file_folder: License](#file_folder-license)
+  * [:file\_folder: License](#file_folder-license)
   * [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
 
-* Angular frontend uses the graphql module to fetch data via localhost port 4000
+* Angular frontend uses the GraphQL module to fetch data via localhost port 4000
 * GraphQL used to query a mock Engineering parts `db.js` database with field reviews of parts and comments to improve the parts supply process
 * This was an idea of mine to link humdrum parts depots/maintenance to social media-like commenting from field personnel to flag up any problems with parts or their documentation.
-* Based on my time on engineering sites, where maintenance, spare parts, tools and related warehousing and manhours is big budget. Project costing was based on the weight of the modifications so this was vital data, e.g weight of cables and cable-trays/cable-ladders.
+* Based on my time on engineering sites, where maintenance, spare parts, tools and related warehousing and manhours is big budget. Project costing was based on the weight of the modifications so this was vital data, e.g. weight of cables and cable-trays/cable-ladders.
 * Engineering parts are classified as critical parts or not with a Boolean `criticalPart` field.
 * Users can query, add, mutate (update) and delete parts, categories & field reviews
 
@@ -41,10 +41,10 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v14](https://angular.io/) javascript framework
+* [Angular v15](https://angular.io/) javascript framework
 * [Apollo Client v3](https://www.npmjs.com/package/@apollo/client) to fetch data via GraphQL
 
-* [Node.js v15](https://nodejs.org/) Javascript runtime using the [Chrome V8 engine](https://v8.dev/)
+* [Node.js v18](https://nodejs.org/) Javascript runtime using the [Chrome V8 engine](https://v8.dev/)
 * [GraphQL v16](https://graphql.org/) API query language
 * [Apollo Server v3](https://www.apollographql.com/docs/apollo-server/getting-started/) for unified data communications
 * [uuid v9](https://www.npmjs.com/package/uuid) to create RFC4122 UUIDs
@@ -99,4 +99,4 @@
 
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: `gomezbateman@yahoo.com`
