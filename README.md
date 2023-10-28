@@ -41,8 +41,9 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v15](https://angular.io/) javascript framework
+* [Angular v16](https://angular.io/) javascript framework
 * [Apollo Client v3](https://www.npmjs.com/package/@apollo/client) to fetch data via GraphQL
+* [Tailwind CSS v3](https://tailwindcss.com/) styles
 
 * [Node.js v18](https://nodejs.org/) Javascript runtime using the [Chrome V8 engine](https://v8.dev/)
 * [GraphQL v16](https://graphql.org/) API query language
@@ -52,9 +53,9 @@
 ## :floppy_disk: Setup
 
 * Front & Back ends: `npm i` to install dependencies
-* Backend: `npm run dev` runs backend in the development mode with auto-restart after changes
+* Backend: `cd Node-backend` then `npm run dev` runs backend in the development mode with auto-restart after changes
 * Open [http://localhost:4000](http://localhost:4000) to access backend Apollo GraphQL Server
-* Frontend: `npm run start` runs frontend with auto-restart after changes
+* Frontend: (new terminal) `cd Angular-frontend` then `npm run start` runs frontend with auto-restart after changes
 * Open [http://localhost:4200](http://localhost:4200) to view frontend
 
 ## :wrench: Testing
